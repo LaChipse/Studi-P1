@@ -1,0 +1,99 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@font-face {
+    font-family: "Cabin";
+    src: url('../fonts/Cabin/static/Cabin/Cabin-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Kalam";
+    src: url('../fonts/Kalam/Kalam-Bold.ttf');
+}
+
+body {
+    font-family: "Cabin";
+    color: white;
+}
+
+header {
+    margin: auto;
+}
+
+span .search-fa {
+    display: none;
+}
+
+header .logo-nav {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-expand .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: space-between;
+}
+
+.navbar-expand {
+    background-color: #e9ecef
+}
+
+.form-inline {
+    display: flex;
+}
+
+h1 {
+    font-family: "Kalam";
+    text-align: center;
+    margin: 30px;
+    margin-top: 50px;
+}
+
+.message-alert {
+    font-family: "Kalam";
+    color: #eb651c;
+}
+
+.navbar {
+    padding: 10px 15px;
+}
+
+.info-help {
+    padding: 50px;
+}
+
+.intro-spa {
+    background-color: #1a3e70;
+    width: 100%;
+    margin: auto;
+}
+
+#bg-kissDog {
+    background-image: url("../assets/images/chien-kiss-bg.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.btn-outline-success {
+    color: #eb651c;
+    border-color: #eb651c;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #eb651c;
+    border-color: #eb651c;
+}
+
+@media screen and (max-width: 760px) {
+    span .search-fa {
+        display: inline;
+    }
+    form .search-band {
+        display: none;
+    }
+    .container {
+        padding: 0px;
+    }
+}
