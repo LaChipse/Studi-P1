@@ -11126,89 +11126,97 @@ textarea.form-control-lg {
   font-family: "Kalam";
   src: url("../fonts/Kalam/Kalam-Bold.ttf");
 }
-body {
+body,
+.card-text {
   font-family: "Cabin";
-  color: white;
+}
+
+body,
+.btn-outline-success:hover,
+.btn-outline-primary {
+  color: #e9ecef;
+}
+
+.container {
+  padding: 0px;
+}
+
+h1, .h1,
+.btn-outline-primary,
+.message-alert,
+.fiche-pets {
+  font-family: "Kalam";
+}
+
+h1, .h1 {
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
 }
 
 p {
   font-size: 18px;
 }
 
-span .search-fa {
-  display: none;
+ul {
+  list-style: none;
+  padding-left: 0rem;
+  margin-bottom: 2rem;
+}
+
+header .logo-nav,
+.navbar-expand,
+.footer,
+.btn-outline-primary:hover {
+  background-color: #e9ecef;
 }
 
 header .logo-nav {
   border: none;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.navbar-expand .navbar-collapse {
-  display: flex !important;
-  flex-basis: auto;
-  justify-content: space-between;
-}
-
-.navbar-expand,
-.footer {
-  background-color: #e9ecef;
-}
-
-footer {
-  color: #1a3e70;
-}
-
-ul {
-  list-style: none;
-}
-
-footer a:link {
-  text-decoration: none;
-  color: #1a3e70;
-}
-
-.fa-reseau {
-  text-align: center;
-  align-content: center;
-  align-self: center;
-  justify-content: space-evenly;
-  display: flex;
-}
-
-.fa-reseau .fa {
-  font-size: 2.5rem;
-}
-
-.form-inline {
-  display: flex;
-}
-
-h1, .h1 {
-  font-family: "Kalam";
-  text-align: center;
-  margin: 30px;
-  margin-top: 50px;
-}
-
-.message-alert,
-.fiche-pets {
-  font-family: "Kalam";
-  color: #eb651c;
 }
 
 .navbar {
   padding: 10px 15px;
 }
 
-.info-help {
-  padding: 50px;
+span .search-fa {
+  display: inline;
+}
+
+form .search-band {
+  display: none;
+}
+
+.navbar-expand .navbar-collapse,
+.fa-reseau,
+.form-inline {
+  display: flex !important;
+  justify-content: space-between;
+}
+
+.fa-reseau .fa {
+  font-size: 1.5rem;
+}
+
+.fa-reseau {
+  align-content: center;
+  align-self: center;
+  text-align: center;
+}
+
+.row,
+.intro-spa {
+  margin: auto;
 }
 
 .intro-spa {
   background-color: #1a3e70;
   width: 100%;
-  margin: auto;
+}
+
+.info-help {
+  padding: 30px;
 }
 
 #bg-kissDog {
@@ -11219,48 +11227,25 @@ h1, .h1 {
   background-position: center;
 }
 
-.btn-outline-success {
-  color: #eb651c;
-  border-color: #eb651c;
-}
-
-.btn-outline-success:hover {
-  color: #fff;
-  background-color: #eb651c;
-  border-color: #eb651c;
-}
-
-.btn-outline-primary {
-  color: white;
-  border-color: #fff;
-  font-size: 20px;
-  font-family: "Kalam";
-}
-
-.btn-outline-primary:hover {
-  color: #1a3e70;
-  background-color: #fff;
-  border-color: #fff;
-}
-
 .card {
-  color: #1a3e70;
   border: 1px solid #1a3e70;
 }
 
 .card-img-top {
   border-bottom: 1px solid #1a3e70;
-}
-
-.card-text {
-  font-family: "Cabin";
-  font-size: 16px;
+  height: 300px;
 }
 
 .card-body {
-  height: 200px;
+  height: 220px;
   padding: 1rem 1rem 0rem 1rem;
   margin-bottom: 1rem;
+  overflow: auto;
+}
+
+.card-subtitle {
+  font-size: 12px;
+  text-align: left;
 }
 
 .fiche-events .card-img-top {
@@ -11271,22 +11256,89 @@ h1, .h1 {
   height: 250px;
 }
 
-.card-subtitle {
-  font-size: 12px;
-  text-align: left;
+.card-text {
+  font-size: 16px;
+  max-height: 120px;
 }
 
-@media screen and (max-width: 760px) {
-  span .search-fa {
-    display: inline;
-  }
+.message-alert,
+.fiche-pets,
+.btn-outline-success,
+.search-fa {
+  color: #eb651c;
+}
 
-  form .search-band {
+.btn-outline-primary,
+.btn-outline-primary:hover {
+  border-color: #e9ecef;
+  font-size: 20px;
+}
+
+.btn-outline-success,
+.btn-outline-success:hover {
+  border-color: #eb651c;
+}
+
+.btn-outline-success:hover {
+  color: #e9ecef;
+  background-color: #eb651c;
+}
+
+footer,
+footer a:link,
+.btn-outline-primary:hover,
+.card {
+  color: #1a3e70;
+}
+
+footer a:link {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 760px) {
+  span .search-fa {
     display: none;
   }
 
+  form .search-band {
+    display: block;
+  }
+
   .container {
-    padding: 0px;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+  }
+}
+@media screen and (min-width: 992px) {
+  .card-img-top {
+    height: 250px;
+  }
+
+  .card-text {
+    max-height: auto;
+  }
+
+  h1, .h1 {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  .info-help {
+    padding: 50px;
+  }
+
+  ul {
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .fa-reseau .fa {
+    font-size: 2.5rem;
+  }
+
+  .fa-reseau {
+    justify-content: space-evenly;
   }
 }
 
