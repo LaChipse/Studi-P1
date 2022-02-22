@@ -74,7 +74,8 @@ h1 {
     margin-top: 50px;
 }
 
-.message-alert {
+.message-alert,
+.fiche-pets {
     font-family: "Kalam";
     color: #eb651c;
 }
@@ -136,6 +137,26 @@ h1 {
 
 .card-text {
     font-family: "Cabin";
+    font-size: 16px;
+}
+
+.card-body {
+    height: 200px;
+    padding: 1rem 1rem 0rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.fiche-events .card-img-top {
+    height: 350px;
+}
+
+.fiche-events .card-body {
+    height: 250px;
+}
+
+.card-subtitle {
+    font-size: 12px;
+    text-align: left;
 }
 
 @media screen and (max-width: 760px) {
